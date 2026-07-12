@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+dist/
+dist-electron/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Android build
+desklink-android/.gradle/
+desklink-android/build/
+desklink-android/app/build/
+desklink-android/local.properties
+desklink-android/.cxx/
+desklink-android/captures/
+*.apk
+*.aab
+
+# Desktop
+desklink-desktop/node_modules/
+desklink-desktop/dist/
+desklink-desktop/dist-electron/

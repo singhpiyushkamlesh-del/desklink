@@ -1,0 +1,44 @@
+appId: com.desklink.desktop
+productName: DeskLink
+copyright: Copyright © 2026 DeskLink
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - dist-electron/main/main.js
+  - dist-electron/preload/preload.cjs
+  - package.json
+  - build/icon.png
+  - node_modules/ws/**/*
+  - "!**/*.map"
+  - "!**/*.d.ts"
+  - "!**/*.ts"
+  - "!src"
+  - "!electron"
+
+extraMetadata:
+  main: dist-electron/main/main.js
+
+asar: true
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.png
+  artifactName: DeskLink-Setup-${version}.${ext}
+  signAndEditExecutable: false
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  allowElevation: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: DeskLink
+
+publish: null

@@ -1,0 +1,14 @@
+{
+  "name": "desklink",
+  "private": true,
+  "version": "0.1.0",
+  "description": "DeskLink — Android-to-Windows companion (monorepo)",
+  "license": "MIT",
+  "scripts": {
+    "desktop:dev": "npm run dev --prefix desklink-desktop",
+    "desktop:build": "npm run build --prefix desklink-desktop",
+    "desktop:typecheck": "npm run typecheck --prefix desklink-desktop",
+    "desktop:pack": "npm run pack --prefix desklink-desktop",
+    "desktop:dist": "npm run dist:win --prefix desklink-desktop"
+  }
+}
